@@ -74,7 +74,6 @@ end
 
 
 ########## OVER? METHOD - Is the game over? ##########
-
 def over?(board)
   if draw?(board) == true
     return true
