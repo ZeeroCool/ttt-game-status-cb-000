@@ -90,6 +90,7 @@ end
 def winner(board)
   if won?(board) == false
     return nil
+  end 
     #get winning combos
     WIN_COMBINATIONS.each do |win_combo|
       win_index_1 = win_combo[0]
