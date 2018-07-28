@@ -49,7 +49,7 @@ def won?(board)
     winner = "X"
   elsif position_1 == "O"
     winner = "O"
-  end 
+  end
 end
 
 
@@ -94,4 +94,5 @@ end
 
 ########## WINNER? METHOD - Name the winner ##########
 def winner(board)
+  return winner
 end
