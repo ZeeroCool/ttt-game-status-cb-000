@@ -25,6 +25,7 @@ WIN_COMBINATIONS = [
 ########## WON? METHOD - Check if a winning combo exists ##########
 def won?(board)
   win = ""
+  winner = ""
   #get winning combos
   WIN_COMBINATIONS.each do |win_combo|
     win_index_1 = win_combo[0]
@@ -35,8 +36,10 @@ def won?(board)
     position_2 = board[win_index_2]
     position_3 = board[win_index_3]
     #IS THERE A WIINER?
-    if (position_1 == "X" && position_2 == "X" && position_3 == "X") || (position_1 == "O" && position_2 == "O" && position_3 == "O")
-      return win_combo
+    if position_1 == "X" && position_2 == "X" && position_3 == "X"
+      winner = "X" return win_combo
+    elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+        winner = "O" return win_combo
     else
       win = false
     end
@@ -87,3 +90,4 @@ end
 end
 
 ########## WINNER? METHOD - Name the winner ##########
+def winner(board)
