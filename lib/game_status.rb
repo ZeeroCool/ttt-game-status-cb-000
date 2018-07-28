@@ -1,7 +1,7 @@
-
-  board = [" ", " ", " ",
-           " ", " ", " ",
-           " ", " ", " "]
+  #
+  # board = [" ", " ", " ",
+  #          " ", " ", " ",
+  #          " ", " ", " "]
 
 ########## Helper Method ##########
 def position_taken?(board, index)
@@ -84,4 +84,6 @@ def over?(board)
   else
   return false
 end
-end 
+end
+
+########## WINNER? METHOD - Name the winner ##########
