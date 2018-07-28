@@ -88,7 +88,7 @@ end
 
 ########## WINNER? METHOD - Name the winner ##########
 def winner(board)
-  if won?(board) = false
+  if won?(board) == false
     return nil
     #get winning combos
     WIN_COMBINATIONS.each do |win_combo|
