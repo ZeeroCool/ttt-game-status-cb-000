@@ -88,7 +88,8 @@ end
 
 ########## WINNER? METHOD - Name the winner ##########
 def winner(board)
-    the_winner = ""
+  if won?(board) = false
+    return nil
     #get winning combos
     WIN_COMBINATIONS.each do |win_combo|
       win_index_1 = win_combo[0]
@@ -103,8 +104,6 @@ def winner(board)
         return "X"
       elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
         return "O"
-      else
-        return ""
       end
     end
   end
