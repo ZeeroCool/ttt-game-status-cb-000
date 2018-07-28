@@ -74,14 +74,15 @@ end
 
 
 ########## OVER? METHOD - Is the game over? ##########
-# 
-# def over?(board)
-#   if draw?(board) == true
-#     return true
-#   elsif won?(board) != false
-#     return true
-#   elsif draw?(board) == true
-#     return true
-#   else
-#   return false
-# end
+
+def over?(board)
+  if draw?(board) == true
+    return true
+  elsif won?(board) != false
+    return true
+  elsif draw?(board) == true
+    return true
+  else
+  return false
+end
+end 
